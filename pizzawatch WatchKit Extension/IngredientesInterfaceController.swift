@@ -15,8 +15,10 @@ class IngredientesInterfaceController: WKInterfaceController {
     var tamaño:String = ""
     var masa:String = ""
     var queso:String = ""
-    var ingredientes: [String] = [String]()
+    var ingredientes:[String] = [String]()
     
+    
+    @IBOutlet var prueba: WKInterfaceLabel!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -24,11 +26,13 @@ class IngredientesInterfaceController: WKInterfaceController {
         tamaño = String(c.tamaño)
         masa = String(c.masa)
         queso = String(c.quesoEleccion)
+       prueba.setText("\(c.tamaño) \n \(c.masa) \n \(c.quesoEleccion)")
+
         // Configure interface objects here.
     }
     
     @IBAction func siguiente() {
-        let valorContexto = ObIngredientes(i:"Acompañada con \(ingredientes)", q:queso, m:masa, t:tamaño)
+        let valorContexto = ObIngredientes(i:"\(ingredientes)", q:queso, m:masa, t:tamaño)
         pushController(withName: "IdentificadorConfitmar", context: valorContexto)
     }
     

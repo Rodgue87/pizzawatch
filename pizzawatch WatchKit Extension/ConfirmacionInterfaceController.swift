@@ -12,13 +12,19 @@ import Foundation
 
 class ConfirmacionInterfaceController: WKInterfaceController {
 
-    @IBOutlet var confirmacion: WKInterfaceLabel!
-    
+
+    @IBOutlet var prueba: WKInterfaceLabel!
+    @IBOutlet var pruebados: WKInterfaceLabel!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        let c = context as! ObIngredientes
-        confirmacion.setText("\(c.tamaño), \(c.masa), \(c.queso), \(c.ingredientesEleccion)")
+        
+        let c = context as! ObIngredientes// context as! ObIngredientes
+        
+        pruebados.setText("\(c.tamaño)")
+        
+        prueba.setText("\(c.tamaño) \n \(c.masa) \n \(c.queso) \n \(c.ingredientesEleccion)")
+        
         // Configure interface objects here.
     }
 

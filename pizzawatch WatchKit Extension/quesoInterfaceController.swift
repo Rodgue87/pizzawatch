@@ -12,8 +12,6 @@ import Foundation
 
 class quesoInterfaceController: WKInterfaceController {
 
-    @IBOutlet var prueba: WKInterfaceLabel!
-    
     var tamaño:String = ""
     var masa:String = ""
     
@@ -21,7 +19,6 @@ class quesoInterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         let c = context as! ObMasa
-        prueba.setText("\(c.masaEleccion), \(c.tamaño)")
         tamaño = String(c.tamaño)
         masa = String(c.masaEleccion)
         

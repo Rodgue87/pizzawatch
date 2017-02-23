@@ -13,11 +13,11 @@ class ObIngredientes: NSObject {
     var queso:String = ""
     var masa:String = ""
     var tamaño:String = ""
-    var ingredientesEleccion:[String] = [String]()
+    var ingredientesEleccion:String = ""
     
     init(i:String, q:String, m:String, t:String) {
         
-        ingredientesEleccion = [i]
+        ingredientesEleccion = i
         queso = q
         masa = m
         tamaño = t

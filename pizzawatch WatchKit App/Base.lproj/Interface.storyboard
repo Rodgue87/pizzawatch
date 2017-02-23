@@ -174,10 +174,14 @@
                                 <action selector="champiñones" destination="9m4-P3-Hxw" id="KDH-O8-Q6r"/>
                             </connections>
                         </button>
+                        <label alignment="left" text="Label" numberOfLines="0" minimumScaleFactor="0.80000000000000004" id="Hfv-Sw-SFY"/>
                     </items>
+                    <connections>
+                        <outlet property="prueba" destination="Hfv-Sw-SFY" id="MVQ-pd-GfG"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1040" y="177"/>
+            <point key="canvasLocation" x="1040" y="211"/>
         </scene>
         <!--IdentificadorConfitmar-->
         <scene sceneID="fXO-yB-3gy">
@@ -186,27 +190,28 @@
                     <items>
                         <table alignment="left" id="cUH-e8-ieL"/>
                         <label width="136" height="54" alignment="left" text="Confirma tu pedido" textAlignment="center" numberOfLines="0" id="Xln-Ce-fTq"/>
-                        <label width="134" height="46" alignment="left" numberOfLines="0" id="Cjb-zK-B0I"/>
+                        <label alignment="left" text="Label" numberOfLines="0" minimumScaleFactor="0.80000000000000004" id="UD3-B6-mgT"/>
+                        <label alignment="left" numberOfLines="0" minimumScaleFactor="0.80000000000000004" id="A0R-N7-0w6"/>
                         <button width="1" alignment="left" title="Confirmar" id="O4D-EB-2R3">
                             <connections>
-                                <segue destination="H1O-px-EMX" kind="modal" id="dkA-66-nvT"/>
+                                <segue destination="H1O-px-EMX" kind="push" id="DfH-Z9-Caa"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
-                        <outlet property="confirmacion" destination="Cjb-zK-B0I" id="ZjE-CD-ZZv"/>
+                        <outlet property="prueba" destination="A0R-N7-0w6" id="6Wm-7L-0tN"/>
+                        <outlet property="pruebados" destination="UD3-B6-mgT" id="08Q-bW-el0"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1264" y="16"/>
+            <point key="canvasLocation" x="1264" y="90"/>
         </scene>
-        <!--Interface Controller-->
+        <!--IdentificadorFinal-->
         <scene sceneID="rrT-5h-udh">
             <objects>
-                <controller id="H1O-px-EMX">
+                <controller identifier="IdentificadorFinal" id="H1O-px-EMX" customClass="UltimoInterfaceController" customModule="pizzawatch_WatchKit_Extension">
                     <items>
                         <label width="134" alignment="left" text="Tu pizza se está preparando!" textAlignment="center" numberOfLines="0" id="349-XY-1mg"/>
-                        <button width="1" alignment="left" title="Finalizar" id="xcG-Vt-Uud"/>
                     </items>
                 </controller>
             </objects>

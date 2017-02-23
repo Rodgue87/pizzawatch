@@ -582,6 +582,7 @@
 				5BC2A6911E5A446B00B13027 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BC2A6931E5A446B00B13027 /* Build configuration list for PBXNativeTarget "pizzawatch WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +591,7 @@
 				5BC2A6951E5A446B00B13027 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BC2A6971E5A446B00B13027 /* Build configuration list for PBXNativeTarget "pizzawatch" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +600,7 @@
 				5BC2A6991E5A446B00B13027 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
