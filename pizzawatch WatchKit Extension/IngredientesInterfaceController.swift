@@ -31,7 +31,7 @@ class IngredientesInterfaceController: WKInterfaceController {
                 eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
             }
             self.mostrarIngredientes.setText(eleccionIngredientes)
-        } else if ingredientes.count <= 5{
+        } else if ingredientes.count < 5{
         self.ingredientes.reserveCapacity(5)
         self.ingredientes.append("Jamón")
             var eleccionIngredientes = ""
@@ -50,7 +50,7 @@ class IngredientesInterfaceController: WKInterfaceController {
             eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
         }
         self.mostrarIngredientes.setText(eleccionIngredientes)
-        }else if ingredientes.count <= 5{
+        }else if ingredientes.count < 5{
         self.ingredientes.reserveCapacity(5)
         self.ingredientes.append("Pepperoni")
         var eleccionIngredientes = ""
@@ -69,7 +69,7 @@ class IngredientesInterfaceController: WKInterfaceController {
                 eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
             }
             self.mostrarIngredientes.setText(eleccionIngredientes)
-        }else if ingredientes.count <= 5{
+        }else if ingredientes.count < 5{
         self.ingredientes.reserveCapacity(5)
         self.ingredientes.append("Pavo")
             var eleccionIngredientes = ""
@@ -88,7 +88,7 @@ class IngredientesInterfaceController: WKInterfaceController {
                 eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
             }
             self.mostrarIngredientes.setText(eleccionIngredientes)
-        }else if ingredientes.count <= 5{
+        }else if ingredientes.count < 5{
         self.ingredientes.reserveCapacity(5)
         self.ingredientes.append("Salchicha")
             var eleccionIngredientes = ""
@@ -107,7 +107,7 @@ class IngredientesInterfaceController: WKInterfaceController {
                 eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
             }
             self.mostrarIngredientes.setText(eleccionIngredientes)
-        }else if ingredientes.count <= 5{
+        }else if ingredientes.count < 5{
         self.ingredientes.reserveCapacity(5)
         self.ingredientes.append("Aceitunas")
             var eleccionIngredientes = ""
@@ -126,7 +126,7 @@ class IngredientesInterfaceController: WKInterfaceController {
                 eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
             }
             self.mostrarIngredientes.setText(eleccionIngredientes)
-        }else if ingredientes.count <= 5{
+        }else if ingredientes.count < 5{
         self.ingredientes.reserveCapacity(5)
         self.ingredientes.append("Cebolla")
             var eleccionIngredientes = ""
@@ -145,7 +145,7 @@ class IngredientesInterfaceController: WKInterfaceController {
                 eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
             }
             self.mostrarIngredientes.setText(eleccionIngredientes)
-        }else if ingredientes.count <= 5{
+        }else if ingredientes.count < 5{
         self.ingredientes.reserveCapacity(5)
         self.ingredientes.append("Pimiento")
             var eleccionIngredientes = ""
@@ -164,7 +164,7 @@ class IngredientesInterfaceController: WKInterfaceController {
                 eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
             }
             self.mostrarIngredientes.setText(eleccionIngredientes)
-        }else if ingredientes.count <= 5{
+        }else if ingredientes.count < 5{
         self.ingredientes.reserveCapacity(5)
         self.ingredientes.append("Piña")
             var eleccionIngredientes = ""
@@ -183,7 +183,7 @@ class IngredientesInterfaceController: WKInterfaceController {
                 eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
             }
             self.mostrarIngredientes.setText(eleccionIngredientes)
-        }else if ingredientes.count <= 5{
+        }else if ingredientes.count < 5{
         self.ingredientes.reserveCapacity(5)
         self.ingredientes.append("Anchoa")
             var eleccionIngredientes = ""
@@ -202,7 +202,7 @@ class IngredientesInterfaceController: WKInterfaceController {
                 eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
             }
             self.mostrarIngredientes.setText(eleccionIngredientes)
-        }else if ingredientes.count <= 5{
+        }else if ingredientes.count < 5{
         self.ingredientes.reserveCapacity(5)
         self.ingredientes.append("Salami")
             var eleccionIngredientes = ""
@@ -221,7 +221,7 @@ class IngredientesInterfaceController: WKInterfaceController {
                 eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
             }
             self.mostrarIngredientes.setText(eleccionIngredientes)
-        }else if ingredientes.count <= 5{
+        }else if ingredientes.count < 5{
         self.ingredientes.reserveCapacity(5)
         self.ingredientes.append("Champiñones")
             var eleccionIngredientes = ""
