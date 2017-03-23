@@ -12,38 +12,34 @@ import Foundation
 
 class quesoInterfaceController: WKInterfaceController {
 
-    var tamaño:String = ""
-    var masa:String = ""
+    
+    var configuracion : Configuracion!
+    var queso = ""
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
-        let c = context as! ObMasa
-        tamaño = String(c.tamaño)
-        masa = String(c.masaEleccion)
-        
+        configuracion = context as! Configuracion
         // Configure interface objects here.
     }
 
     @IBAction func mozzarella() {
-        let valorContexto = Obqueso(q:"Tipo de queso: Mozzarella", m:masa, t:tamaño)
-        pushController(withName: "IdentificadorIngredientes", context: valorContexto)
+        self.queso = "Queso: Mozzarella"
+        self.pushController(withName: "IdentificadorIngredientes", context: Configuracion(tamaño: self.configuracion.tamaño, masa: self.configuracion.masa, queso: queso, ingredientes: []))
     }
     
     @IBAction func cheddar() {
-        let valorContexto = Obqueso(q:"Tipo de queso: Cheddar", m:masa, t:tamaño)
-        pushController(withName: "IdentificadorIngredientes", context: valorContexto)
-        
+        self.queso = "Queso: Cheddar"
+        self.pushController(withName: "IdentificadorIngredientes", context: Configuracion(tamaño: self.configuracion.tamaño, masa: self.configuracion.masa, queso: queso, ingredientes: []))
     }
     
     @IBAction func parmesano() {
-        let valorContexto = Obqueso(q:"Tipo de queso: Parmesano", m:masa, t:tamaño)
-        pushController(withName: "IdentificadorIngredientes", context: valorContexto)
-    
+        self.queso = "Queso: Parmesano"
+        self.pushController(withName: "IdentificadorIngredientes", context: Configuracion(tamaño: self.configuracion.tamaño, masa: self.configuracion.masa, queso: queso, ingredientes: []))
     }
+    
     @IBAction func noQueso() {
-        let valorContexto = Obqueso(q:"Tipo de queso: Sin queso", m:masa, t:tamaño)
-        pushController(withName: "IdentificadorIngredientes", context: valorContexto)
+        self.queso = "Queso: Sin Queso"
+        self.pushController(withName: "IdentificadorIngredientes", context: Configuracion(tamaño: self.configuracion.tamaño, masa: self.configuracion.masa, queso: queso, ingredientes: []))
     }
     
     override func willActivate() {

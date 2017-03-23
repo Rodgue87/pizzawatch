@@ -12,83 +12,239 @@ import Foundation
 
 class IngredientesInterfaceController: WKInterfaceController {
 
-    var tamaño:String = ""
-    var masa:String = ""
-    var queso:String = ""
+    @IBOutlet var mostrarIngredientes: WKInterfaceLabel!
+    
+    var configuracion : Configuracion!
     var ingredientes:[String] = [String]()
-    
-    
-    @IBOutlet var prueba: WKInterfaceLabel!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        let c = context as! Obqueso
-        tamaño = String(c.tamaño)
-        masa = String(c.masa)
-        queso = String(c.quesoEleccion)
-       prueba.setText("\(c.tamaño) \n \(c.masa) \n \(c.quesoEleccion)")
-
+        configuracion = context as! Configuracion
         // Configure interface objects here.
     }
     
-    @IBAction func siguiente() {
-        let valorContexto = ObIngredientes(i:"\(ingredientes)", q:queso, m:masa, t:tamaño)
-        pushController(withName: "IdentificadorConfitmar", context: valorContexto)
-    }
-    
     @IBAction func jamon() {
-        ingredientes.reserveCapacity(5)
-        ingredientes.append("Jamón")
+        if let index = self.ingredientes.index(of: "Jamón"){
+            self.ingredientes.remove(at: index)
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+        } else if ingredientes.count <= 5{
+        self.ingredientes.reserveCapacity(5)
+        self.ingredientes.append("Jamón")
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+    }
     }
     
     @IBAction func pepperoni() {
-        ingredientes.reserveCapacity(5)
-        ingredientes.append("Pepperoni")
+     if let index = self.ingredientes.index(of: "Pepperoni"){
+            self.ingredientes.remove(at: index)
+        var eleccionIngredientes = ""
+        for i in ingredientes{
+            eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+        }
+        self.mostrarIngredientes.setText(eleccionIngredientes)
+        }else if ingredientes.count <= 5{
+        self.ingredientes.reserveCapacity(5)
+        self.ingredientes.append("Pepperoni")
+        var eleccionIngredientes = ""
+        for i in ingredientes{
+            eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+        }
+        self.mostrarIngredientes.setText(eleccionIngredientes)
+    }
     }
     
     @IBAction func pavo() {
-        ingredientes.reserveCapacity(5)
-        ingredientes.append("Pavo")
+        if let index = self.ingredientes.index(of: "Pavo"){
+            self.ingredientes.remove(at: index)
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+        }else if ingredientes.count <= 5{
+        self.ingredientes.reserveCapacity(5)
+        self.ingredientes.append("Pavo")
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+    }
     }
     
     @IBAction func salchicha() {
-        ingredientes.reserveCapacity(5)
-        ingredientes.append("Salchicha")
+        if let index = self.ingredientes.index(of: "Salchicha"){
+            self.ingredientes.remove(at: index)
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+        }else if ingredientes.count <= 5{
+        self.ingredientes.reserveCapacity(5)
+        self.ingredientes.append("Salchicha")
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+    }
     }
     
     @IBAction func aceituna() {
-        ingredientes.reserveCapacity(5)
-        ingredientes.append("Aceitunas")
+        if let index = self.ingredientes.index(of: "Aceitunas"){
+            self.ingredientes.remove(at: index)
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+        }else if ingredientes.count <= 5{
+        self.ingredientes.reserveCapacity(5)
+        self.ingredientes.append("Aceitunas")
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+    }
     }
     
     @IBAction func cebolla() {
-        ingredientes.reserveCapacity(5)
-        ingredientes.append("Cebolla")
+        if let index = self.ingredientes.index(of: "Cebolla"){
+            self.ingredientes.remove(at: index)
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+        }else if ingredientes.count <= 5{
+        self.ingredientes.reserveCapacity(5)
+        self.ingredientes.append("Cebolla")
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+    }
     }
     
     @IBAction func pimiento() {
-        ingredientes.reserveCapacity(5)
-        ingredientes.append("Pimiento")
+        if let index = self.ingredientes.index(of: "Pimiento"){
+            self.ingredientes.remove(at: index)
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+        }else if ingredientes.count <= 5{
+        self.ingredientes.reserveCapacity(5)
+        self.ingredientes.append("Pimiento")
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+    }
     }
     
     @IBAction func piña() {
-        ingredientes.reserveCapacity(5)
-        ingredientes.append("Piña")
+        if let index = self.ingredientes.index(of: "Piña"){
+            self.ingredientes.remove(at: index)
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+        }else if ingredientes.count <= 5{
+        self.ingredientes.reserveCapacity(5)
+        self.ingredientes.append("Piña")
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+    }
     }
     
     @IBAction func anchoa() {
-        ingredientes.reserveCapacity(5)
-        ingredientes.append("Anchoa")
+        if let index = self.ingredientes.index(of: "Anchoa"){
+            self.ingredientes.remove(at: index)
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+        }else if ingredientes.count <= 5{
+        self.ingredientes.reserveCapacity(5)
+        self.ingredientes.append("Anchoa")
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+    }
     }
     
     @IBAction func salami() {
-        ingredientes.reserveCapacity(5)
-        ingredientes.append("Salami")
+        if let index = self.ingredientes.index(of: "Salami"){
+            self.ingredientes.remove(at: index)
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+        }else if ingredientes.count <= 5{
+        self.ingredientes.reserveCapacity(5)
+        self.ingredientes.append("Salami")
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+    }
     }
     
     @IBAction func champiñones() {
-        ingredientes.reserveCapacity(5)
-        ingredientes.append("Champiñones")
+        if let index = self.ingredientes.index(of: "Champiñones"){
+            self.ingredientes.remove(at: index)
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+        }else if ingredientes.count <= 5{
+        self.ingredientes.reserveCapacity(5)
+        self.ingredientes.append("Champiñones")
+            var eleccionIngredientes = ""
+            for i in ingredientes{
+                eleccionIngredientes = "\(eleccionIngredientes) \n \(i) "
+            }
+            self.mostrarIngredientes.setText(eleccionIngredientes)
+    }
+    }
+    
+    @IBAction func siguiente() {
+        if (ingredientes.count <= 5) {
+            pushController(withName: "IdentificadorConfitmar", context: Configuracion(tamaño: self.configuracion.tamaño, masa: self.configuracion.masa, queso: self.configuracion.queso, ingredientes: ingredientes))
+        }
+    }
+    
+    
+    
+    @IBAction func borrarTodo() {
+        self.ingredientes.removeAll()
+        let noIngredientes = ""
+        self.mostrarIngredientes.setText(noIngredientes)
+        
     }
     
     override func willActivate() {

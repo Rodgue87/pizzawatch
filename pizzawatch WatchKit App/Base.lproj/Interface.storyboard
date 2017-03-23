@@ -114,11 +114,23 @@
                 <controller identifier="IdentificadorIngredientes" id="9m4-P3-Hxw" customClass="IngredientesInterfaceController" customModule="pizzawatch_WatchKit_Extension">
                     <items>
                         <label width="136" alignment="left" text="Ingredientes" textAlignment="center" id="eWy-Uh-LZV"/>
-                        <button width="1" alignment="left" title="Siguiente" id="cWS-eA-fuK">
-                            <connections>
-                                <action selector="siguiente" destination="9m4-P3-Hxw" id="Vhh-Qf-DWL"/>
-                            </connections>
-                        </button>
+                        <label width="136" alignment="left" numberOfLines="0" id="znq-e1-bEo"/>
+                        <group width="133" alignment="left" id="CQh-GH-4sZ">
+                            <items>
+                                <button width="65" alignment="left" title="Siguiente" id="cWS-eA-fuK">
+                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                    <connections>
+                                        <action selector="siguiente" destination="9m4-P3-Hxw" id="Vhh-Qf-DWL"/>
+                                    </connections>
+                                </button>
+                                <button width="69" alignment="left" title="Borrar" id="Pfn-bM-oEO">
+                                    <fontDescription key="font" type="system" pointSize="9"/>
+                                    <connections>
+                                        <action selector="borrarTodo" destination="9m4-P3-Hxw" id="p3v-Ef-YfC"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                         <button width="1" alignment="left" backgroundImage="jamon" id="8ou-Xd-wjp">
                             <connections>
                                 <action selector="jamon" destination="9m4-P3-Hxw" id="PMd-em-fmU"/>
@@ -174,14 +186,25 @@
                                 <action selector="champiñones" destination="9m4-P3-Hxw" id="KDH-O8-Q6r"/>
                             </connections>
                         </button>
-                        <label alignment="left" text="Label" numberOfLines="0" minimumScaleFactor="0.80000000000000004" id="Hfv-Sw-SFY"/>
                     </items>
                     <connections>
-                        <outlet property="prueba" destination="Hfv-Sw-SFY" id="MVQ-pd-GfG"/>
+                        <outlet property="borrar" destination="Pfn-bM-oEO" id="gYL-Ok-fve"/>
+                        <outlet property="botonaceituna" destination="Uwl-uE-VbY" id="1bE-5D-cGZ"/>
+                        <outlet property="botonanchoa" destination="Sob-N4-tHA" id="Uut-Mc-ALf"/>
+                        <outlet property="botoncebolla" destination="Oke-cL-B5Y" id="2rL-xB-V6t"/>
+                        <outlet property="botonchampiñon" destination="8wv-Ds-4Vn" id="YQn-FV-5Hh"/>
+                        <outlet property="botonjamon" destination="8ou-Xd-wjp" id="TbF-iG-jEc"/>
+                        <outlet property="botonpavo" destination="bVt-ea-QnW" id="9mo-zO-f4Y"/>
+                        <outlet property="botonpepperoni" destination="Mcb-s6-zHE" id="89M-Qe-c1b"/>
+                        <outlet property="botonpimiento" destination="6eN-Yq-qxG" id="k1t-Fp-enV"/>
+                        <outlet property="botonpiña" destination="2xk-ms-RKb" id="LOB-bK-4Zd"/>
+                        <outlet property="botonsalami" destination="6Jo-Tk-BeI" id="qVo-u6-cfQ"/>
+                        <outlet property="botonsalchicha" destination="eT5-Jc-HEY" id="NBy-ED-bUc"/>
+                        <outlet property="mostrarIngredientes" destination="znq-e1-bEo" id="Zpb-Sg-fcB"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1040" y="211"/>
+            <point key="canvasLocation" x="1040" y="208.5"/>
         </scene>
         <!--IdentificadorConfitmar-->
         <scene sceneID="fXO-yB-3gy">
@@ -190,17 +213,18 @@
                     <items>
                         <table alignment="left" id="cUH-e8-ieL"/>
                         <label width="136" height="54" alignment="left" text="Confirma tu pedido" textAlignment="center" numberOfLines="0" id="Xln-Ce-fTq"/>
-                        <label alignment="left" text="Label" numberOfLines="0" minimumScaleFactor="0.80000000000000004" id="UD3-B6-mgT"/>
                         <label alignment="left" numberOfLines="0" minimumScaleFactor="0.80000000000000004" id="A0R-N7-0w6"/>
+                        <label width="133" alignment="left" text="Label" numberOfLines="0" id="paF-Ft-cb6"/>
+                        <label alignment="left" numberOfLines="0" id="M9g-08-6lI"/>
                         <button width="1" alignment="left" title="Confirmar" id="O4D-EB-2R3">
                             <connections>
-                                <segue destination="H1O-px-EMX" kind="push" id="DfH-Z9-Caa"/>
+                                <action selector="confirmar" destination="WLK-cU-VgM" id="YAg-5V-l6y"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
-                        <outlet property="prueba" destination="A0R-N7-0w6" id="6Wm-7L-0tN"/>
-                        <outlet property="pruebados" destination="UD3-B6-mgT" id="08Q-bW-el0"/>
+                        <outlet property="pedido" destination="M9g-08-6lI" id="14b-j5-H8a"/>
+                        <outlet property="prueba" destination="paF-Ft-cb6" id="78k-8s-FyK"/>
                     </connections>
                 </controller>
             </objects>
@@ -209,9 +233,14 @@
         <!--IdentificadorFinal-->
         <scene sceneID="rrT-5h-udh">
             <objects>
-                <controller identifier="IdentificadorFinal" id="H1O-px-EMX" customClass="UltimoInterfaceController" customModule="pizzawatch_WatchKit_Extension">
+                <controller identifier="IdentificadorFinal" id="H1O-px-EMX" customClass="finalInterfaceController" customModule="pizzawatch_WatchKit_Extension">
                     <items>
                         <label width="134" alignment="left" text="Tu pizza se está preparando!" textAlignment="center" numberOfLines="0" id="349-XY-1mg"/>
+                        <button width="1" alignment="left" title="Ordenar otra!" id="ihV-L9-BRS">
+                            <connections>
+                                <action selector="reiniciar" destination="H1O-px-EMX" id="lMC-5w-H0S"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>

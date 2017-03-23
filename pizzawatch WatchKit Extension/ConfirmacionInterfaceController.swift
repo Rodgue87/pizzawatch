@@ -13,21 +13,31 @@ import Foundation
 class ConfirmacionInterfaceController: WKInterfaceController {
 
 
+    //@IBOutlet var prueba: WKInterfaceLabel!
     @IBOutlet var prueba: WKInterfaceLabel!
-    @IBOutlet var pruebados: WKInterfaceLabel!
+    @IBOutlet var pedido: WKInterfaceLabel!
+    
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        let c = context as! ObIngredientes// context as! ObIngredientes
+        let configuracion = context as! Configuracion
         
-        pruebados.setText("\(c.tamaño)")
+        var mostrarIngredientes = ""
         
-        prueba.setText("\(c.tamaño) \n \(c.masa) \n \(c.queso) \n \(c.ingredientesEleccion)")
-        
+        for i in configuracion.ingredientes{
+            mostrarIngredientes = "\(mostrarIngredientes) \n \(i) "
+        }
+    
+        self.pedido.setText(configuracion.tamaño + "\n" + "\n" + configuracion.masa + "\n" + "\n" + configuracion.queso + "\n" + "\n" + "Preparada con:" + mostrarIngredientes)
+   
         // Configure interface objects here.
     }
 
+    @IBAction func confirmar() {
+        pushController(withName: "IdentificadorFinal", context: nil)
+    }
+    
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()

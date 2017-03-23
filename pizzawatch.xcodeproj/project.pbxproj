@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B2AB2BA1E824BB20036AD06 /* configuracion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2AB2B91E824BB20036AD06 /* configuracion.swift */; };
+		5B2AB2BE1E826A040036AD06 /* finalInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2AB2BD1E826A040036AD06 /* finalInterfaceController.swift */; };
 		5BC2A6641E5A446A00B13027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2A6631E5A446A00B13027 /* AppDelegate.swift */; };
 		5BC2A6661E5A446A00B13027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2A6651E5A446A00B13027 /* ViewController.swift */; };
 		5BC2A6691E5A446A00B13027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC2A6671E5A446A00B13027 /* Main.storyboard */; };
@@ -19,13 +21,9 @@
 		5BC2A6871E5A446B00B13027 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2A6861E5A446B00B13027 /* InterfaceController.swift */; };
 		5BC2A6891E5A446B00B13027 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2A6881E5A446B00B13027 /* ExtensionDelegate.swift */; };
 		5BC2A68B1E5A446B00B13027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BC2A68A1E5A446B00B13027 /* Assets.xcassets */; };
-		5BC2A69B1E5A4CBD00B13027 /* tamano.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2A69A1E5A4CBD00B13027 /* tamano.swift */; };
 		5BC2A69D1E5A557A00B13027 /* TamañoInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2A69C1E5A557900B13027 /* TamañoInterfaceController.swift */; };
 		5BC2A69F1E5A653900B13027 /* masaInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2A69E1E5A653900B13027 /* masaInterfaceController.swift */; };
 		5BC2A6A11E5A6C4A00B13027 /* quesoInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2A6A01E5A6C4A00B13027 /* quesoInterfaceController.swift */; };
-		5BC2A6A51E5A736200B13027 /* ObMasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2A6A41E5A736200B13027 /* ObMasa.swift */; };
-		5BC2A6A71E5A7C8400B13027 /* Obqueso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2A6A61E5A7C8400B13027 /* Obqueso.swift */; };
-		5BC2A6A91E5A7CA000B13027 /* ObIngredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2A6A81E5A7CA000B13027 /* ObIngredientes.swift */; };
 		5BC2A6AB1E5A7CCC00B13027 /* IngredientesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2A6AA1E5A7CCC00B13027 /* IngredientesInterfaceController.swift */; };
 		5BC2A6AD1E5A7CE400B13027 /* ConfirmacionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2A6AC1E5A7CE400B13027 /* ConfirmacionInterfaceController.swift */; };
 /* End PBXBuildFile section */
@@ -73,6 +71,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5B2AB2B91E824BB20036AD06 /* configuracion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = configuracion.swift; sourceTree = "<group>"; };
+		5B2AB2BD1E826A040036AD06 /* finalInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = finalInterfaceController.swift; sourceTree = "<group>"; };
 		5BC2A6601E5A446A00B13027 /* pizzawatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pizzawatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC2A6631E5A446A00B13027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BC2A6651E5A446A00B13027 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,13 +89,9 @@
 		5BC2A6881E5A446B00B13027 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		5BC2A68A1E5A446B00B13027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BC2A68C1E5A446B00B13027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5BC2A69A1E5A4CBD00B13027 /* tamano.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tamano.swift; sourceTree = "<group>"; };
 		5BC2A69C1E5A557900B13027 /* TamañoInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TamañoInterfaceController.swift"; sourceTree = "<group>"; };
 		5BC2A69E1E5A653900B13027 /* masaInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = masaInterfaceController.swift; sourceTree = "<group>"; };
 		5BC2A6A01E5A6C4A00B13027 /* quesoInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quesoInterfaceController.swift; sourceTree = "<group>"; };
-		5BC2A6A41E5A736200B13027 /* ObMasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObMasa.swift; sourceTree = "<group>"; };
-		5BC2A6A61E5A7C8400B13027 /* Obqueso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obqueso.swift; sourceTree = "<group>"; };
-		5BC2A6A81E5A7CA000B13027 /* ObIngredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObIngredientes.swift; sourceTree = "<group>"; };
 		5BC2A6AA1E5A7CCC00B13027 /* IngredientesInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientesInterfaceController.swift; sourceTree = "<group>"; };
 		5BC2A6AC1E5A7CE400B13027 /* ConfirmacionInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmacionInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,15 +164,13 @@
 				5BC2A6881E5A446B00B13027 /* ExtensionDelegate.swift */,
 				5BC2A68A1E5A446B00B13027 /* Assets.xcassets */,
 				5BC2A68C1E5A446B00B13027 /* Info.plist */,
-				5BC2A69A1E5A4CBD00B13027 /* tamano.swift */,
+				5B2AB2B91E824BB20036AD06 /* configuracion.swift */,
 				5BC2A69C1E5A557900B13027 /* TamañoInterfaceController.swift */,
 				5BC2A69E1E5A653900B13027 /* masaInterfaceController.swift */,
 				5BC2A6A01E5A6C4A00B13027 /* quesoInterfaceController.swift */,
-				5BC2A6A41E5A736200B13027 /* ObMasa.swift */,
-				5BC2A6A61E5A7C8400B13027 /* Obqueso.swift */,
-				5BC2A6A81E5A7CA000B13027 /* ObIngredientes.swift */,
 				5BC2A6AA1E5A7CCC00B13027 /* IngredientesInterfaceController.swift */,
 				5BC2A6AC1E5A7CE400B13027 /* ConfirmacionInterfaceController.swift */,
+				5B2AB2BD1E826A040036AD06 /* finalInterfaceController.swift */,
 			);
 			path = "pizzawatch WatchKit Extension";
 			sourceTree = "<group>";
@@ -325,16 +319,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BC2A69B1E5A4CBD00B13027 /* tamano.swift in Sources */,
-				5BC2A6A91E5A7CA000B13027 /* ObIngredientes.swift in Sources */,
-				5BC2A6A51E5A736200B13027 /* ObMasa.swift in Sources */,
 				5BC2A6891E5A446B00B13027 /* ExtensionDelegate.swift in Sources */,
 				5BC2A69D1E5A557A00B13027 /* TamañoInterfaceController.swift in Sources */,
 				5BC2A6871E5A446B00B13027 /* InterfaceController.swift in Sources */,
+				5B2AB2BE1E826A040036AD06 /* finalInterfaceController.swift in Sources */,
 				5BC2A6AB1E5A7CCC00B13027 /* IngredientesInterfaceController.swift in Sources */,
 				5BC2A69F1E5A653900B13027 /* masaInterfaceController.swift in Sources */,
 				5BC2A6AD1E5A7CE400B13027 /* ConfirmacionInterfaceController.swift in Sources */,
-				5BC2A6A71E5A7C8400B13027 /* Obqueso.swift in Sources */,
+				5B2AB2BA1E824BB20036AD06 /* configuracion.swift in Sources */,
 				5BC2A6A11E5A6C4A00B13027 /* quesoInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

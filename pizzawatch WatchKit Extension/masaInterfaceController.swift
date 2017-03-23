@@ -12,29 +12,28 @@ import Foundation
 
 class masaInterfaceController: WKInterfaceController {
 
-    var tamaño:String = ""
+    var configuracion : Configuracion!
+    var masa = ""
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        let cont = context as! tamano
-        tamaño = String(cont.tamañoEleccion)
-        // Configure interface objects here.
+        configuracion = context as! Configuracion
     }
     
 
     @IBAction func delgada() {
-        let valorContexto = ObMasa(m:"Tipo de masa: Delgada", t:tamaño)
-        pushController(withName: "IdentificadorQueso", context: valorContexto)
+        self.masa = "Masa: Delgada"
+        self.pushController(withName: "IdentificadorQueso", context: Configuracion(tamaño: self.configuracion.tamaño, masa: masa, queso: "", ingredientes: []))
     }
     
     @IBAction func crujiente() {
-        let valorContexto = ObMasa(m:"Tipo de masa: Crujiente", t:tamaño)
-        pushController(withName: "IdentificadorQueso", context: valorContexto)
+        self.masa = "Masa: Crujiente"
+        self.pushController(withName: "IdentificadorQueso", context: Configuracion(tamaño: self.configuracion.tamaño, masa: masa, queso: "", ingredientes: []))
     }
     
     @IBAction func Gruesa() {
-        let valorContexto = ObMasa(m:"Tipo de masa: Gruesa", t:tamaño)
-        pushController(withName: "IdentificadorQueso", context: valorContexto)
+        self.masa = "Masa: Gruesa"
+        self.pushController(withName: "IdentificadorQueso", context: Configuracion(tamaño: self.configuracion.tamaño, masa: masa, queso: "", ingredientes: []))
     }
     
     override func willActivate() {

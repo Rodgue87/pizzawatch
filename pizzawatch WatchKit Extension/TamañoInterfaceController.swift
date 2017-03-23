@@ -12,25 +12,27 @@ import Foundation
 
 class TamañoInterfaceController: WKInterfaceController {
     
+    var tamaño = ""
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
         // Configure interface objects here.
     }
     
     @IBAction func chica() {
-        let valorContexto = tamano(t:"Tamaño: Chica")
-        pushController(withName: "IdentificadorMasa", context: valorContexto)
+        self.tamaño = "Tamaño: Chica"
+        self.pushController(withName: "IdentificadorMasa", context: Configuracion(tamaño: tamaño, masa: "", queso: "", ingredientes: []))
+        
     }
     
     @IBAction func mediana() {
-        let valorContexto = tamano(t:"Tamaño: Mediana")
-        pushController(withName: "IdentificadorMasa", context: valorContexto)
+        self.tamaño = "Tamaño: Mediana"
+        self.pushController(withName: "IdentificadorMasa", context: Configuracion(tamaño: tamaño, masa: "", queso: "", ingredientes: []))
     }
 
     @IBAction func grande() {
-        let valorContexto = tamano(t:"Tamaño: Grande")
-        pushController(withName: "IdentificadorMasa", context: valorContexto)
+        self.tamaño = "Tamaño: Grande"
+        self.pushController(withName: "IdentificadorMasa", context: Configuracion(tamaño: tamaño, masa: "", queso: "", ingredientes: []))
     }
     
     override func willActivate() {
